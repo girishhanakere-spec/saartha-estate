@@ -1,12 +1,9 @@
-SAARTHA ESTATE — COMPLETE WEBSITE UPDATE PACKAGE
+SAARTHA ESTATE — October 2026 field-photo update
 
-This package preserves all 11 files from the earlier October irrigation/background update package, including the existing index content, original coffee/pepper/avocado photographs, Fertigation video.mp4, and summer-irrigation-march-2026.mp4.
+This package contains the website index.html, the existing referenced media, and two authentic new estate photographs:
+- coffee-saplings-at-estate-entrance-oct-2026.webp
+- avocado-blossom-oct-2026.webp
 
-It adds a 2026 Estate New Plant Establishments section and six genuine saved young pepper-vine photographs. The background overlay has been lightened to make the existing coffee/pepper background more visible while preserving readability.
+Upload all files in this folder to the ROOT of the GitHub repository. Keep filenames unchanged. When GitHub asks to commit changes, review the file list and commit. Do not upload this ZIP itself; upload the extracted files.
 
-IMPORTANT:
-- Do not delete any existing repository files.
-- Upload/replace index.html and ADD the six pepper-young-*.jpg files to the same repository root.
-- Existing photos and both videos are retained in this package.
-- Avocado blossom, guava, and verified banana/Dhoopa photos are not included; add them when the upload limit allows.
-- Captions avoid assigning exact planting ages where records have not confirmed them.
+The new photos were supplied by the owner and converted to WebP for website use. Captions identify them as photographed by the owner's 13-year-old son.
