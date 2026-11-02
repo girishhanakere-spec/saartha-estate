@@ -104,6 +104,9 @@ p{max-width:88ch}
 .visual-feature{margin:30px 0 34px;border-radius:10px;overflow:hidden;border:1px solid var(--line);box-shadow:0 14px 34px rgba(0,0,0,.18)}
 .visual-feature img{display:block;width:100%;height:clamp(420px,72vw,780px);object-fit:cover}
 .visual-feature figcaption{padding:14px 18px;background:rgba(13,38,25,.78);color:#f4f4e9;font:14px/1.6 Arial,sans-serif}
+/* Keep pepper establishment photographs 3 and 4 together as a two-column pair */
+.establishment-grid.pepper-photo-pair{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.establishment-grid.pepper-photo-pair figure{height:100%}
 /* Pepper photographs: preserve the feature-frame size while showing each complete original image */
 .pepper-photo img{height:clamp(420px,72vw,780px);object-fit:contain;background:rgba(13,38,25,.34)}
 @media(max-width:560px){.pepper-photo img{height:300px}}
@@ -369,8 +372,10 @@ Your browser does not support the video tag.
 <figure><img src="coffee-saplings-at-estate-entrance-oct-2026.webp" alt="Coffee saplings gathered along the entrance path at SAARTHA ESTATE"><figcaption><b>Coffee saplings at the farm entrance</b><br>Photographed by the owner's 13-year-old son; saplings gathered before planting. Shared October 2026.</figcaption></figure>
 <figure><img src="pepper-young-01.jpg" alt="Young pepper vine climbing its support tree"><figcaption><b>Young black pepper vine</b><br>Field photograph shared 21 October 2026. Planting age to be confirmed against the planting record.</figcaption></figure>
 <figure><img src="pepper-young-02.jpg" alt="Young pepper vine with developing leaves"><figcaption><b>Young black pepper vine</b><br>Field photograph shared 21 October 2026. Included for future growth comparison.</figcaption></figure>
-<figure><img src="pepper-young-03.jpg" alt="Young pepper plant in the estate"><figcaption><b>Young pepper plant</b><br>Field photograph shared 20 October 2026.</figcaption></figure>
-<figure><img src="pepper-young-04.jpg" alt="Pepper vine with fresh growth"><figcaption><b>Pepper vine with fresh growth</b><br>Field photograph shared 20 October 2026.</figcaption></figure>
+<div class="establishment-grid pepper-photo-pair" aria-label="Pepper photographs 3 and 4 displayed side by side">
+<figure><img src="pepper-young-03.jpg" alt="Third pepper establishment photograph: young pepper plant in the estate" loading="lazy"><figcaption><b>Pepper — photograph 3</b><br>Field photograph shared 20 October 2026.</figcaption></figure>
+<figure><img src="pepper-young-04.jpg" alt="Fourth pepper establishment photograph: pepper vine with fresh growth" loading="lazy"><figcaption><b>Pepper — photograph 4</b><br>Field photograph shared 20 October 2026.</figcaption></figure>
+</div>
 <figure><img src="pepper-young-05.jpg" alt="Pepper vine climbing a tree support"><figcaption><b>Pepper vine on support tree</b><br>Field photograph shared 17 October 2026.</figcaption></figure>
 <figure><img src="pepper-young-06.jpg" alt="Young pepper vine in a shaded plantation"><figcaption><b>Young pepper vine</b><br>Field photograph shared 17 October 2026.</figcaption></figure>
 <figure><img src="avocado-may-2026-full-tree.webp" alt="Avocado tree with green fruit"><figcaption><b>Butter fruit (avocado)</b><br>Earlier fruit-development photograph, May 2026. Blossom-stage photographs will be added later.</figcaption></figure>
