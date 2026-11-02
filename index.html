@@ -104,27 +104,9 @@ p{max-width:88ch}
 .visual-feature{margin:30px 0 34px;border-radius:10px;overflow:hidden;border:1px solid var(--line);box-shadow:0 14px 34px rgba(0,0,0,.18)}
 .visual-feature img{display:block;width:100%;height:clamp(420px,72vw,780px);object-fit:cover}
 .visual-feature figcaption{padding:14px 18px;background:rgba(13,38,25,.78);color:#f4f4e9;font:14px/1.6 Arial,sans-serif}
-/* Pepper photographs 3 and 4: make the pair span the full planting-gallery width */
-.establishment-grid.pepper-photo-pair{
-  grid-column:1 / -1;
-  display:grid;
-  width:100%;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  align-items:start;
-  gap:16px;
-}
-.establishment-grid.pepper-photo-pair figure{height:100%;min-width:0}
-.establishment-grid.pepper-photo-pair img{
-  display:block;
-  width:100%;
-  height:clamp(230px,28vw,360px);
-  object-fit:contain;
-  background:rgba(13,38,25,.34);
-}
-@media(max-width:560px){
-  .establishment-grid.pepper-photo-pair{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
-  .establishment-grid.pepper-photo-pair img{height:190px}
-}
+/* Keep pepper establishment photographs 3 and 4 together as a two-column pair */
+.establishment-grid.pepper-photo-pair{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.establishment-grid.pepper-photo-pair figure{height:100%}
 /* Pepper photographs: preserve the feature-frame size while showing each complete original image */
 .pepper-photo img{height:clamp(420px,72vw,780px);object-fit:contain;background:rgba(13,38,25,.34)}
 @media(max-width:560px){.pepper-photo img{height:300px}}
@@ -215,7 +197,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #f0d9a1;outline-offset:3p
 
 <div class="media-slot">
 <video controls preload="metadata" style="width:100%;max-height:520px;border-radius:8px;background:#111">
-<source src="Fertigation video.mp4?v=20261102" type="video/mp4"/>
+<source src="Fertigation video.mp4" type="video/mp4"/>
 Your browser does not support the video tag.
 </video>
 <p class="subtle"><b>Field video — Bioslurry fertigation:</b> the video documents the estate's practical fertigation operation using the prepared bioslurry, HPT pump and irrigation network. This is a field-recording of the current estate practice.</p>
