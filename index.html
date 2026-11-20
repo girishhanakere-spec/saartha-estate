@@ -123,6 +123,16 @@ a:focus-visible,button:focus-visible{outline:2px solid #f0d9a1;outline-offset:3p
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 
 .establishment-grid img.photo-contain{object-fit:contain;background:rgba(13,38,25,.34)}
+
+/* Coffee collection product cards */
+.coffee-products{grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));align-items:stretch}
+.coffee-product{display:grid;grid-template-columns:minmax(130px,.78fr) minmax(0,1.22fr);gap:20px;align-items:center}
+.coffee-product>img{display:block;width:100%;max-height:430px;object-fit:contain;border-radius:6px;background:rgba(255,255,255,.06)}
+.coffee-product-copy h3{margin:8px 0 4px}
+.coffee-prices{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.coffee-prices span{display:flex;flex-direction:column;gap:2px;padding:10px 14px;border:1px solid rgba(236,241,228,.28);border-radius:6px;background:rgba(230,240,226,.09);font:13px Arial,sans-serif}
+.coffee-prices strong{font-size:20px;color:#f0d29a}
+@media(max-width:700px){.coffee-product{grid-template-columns:1fr}.coffee-product>img{max-height:360px;width:min(100%,320px);margin:auto}}
 </style>
 </head>
 <body>
@@ -494,15 +504,32 @@ Your browser does not support the video tag.
 <div class="note"><b>Media register format:</b> Photo/Video number → subject → approximate date → block/location → short field note. The aim is to preserve both the image and the context in which it was recorded.</div>
 </section>
 <section id="shop">
-<h2>Harvest 2026 — Coming Soon</h2>
-<p class="lead">A small first release from SAARTHA ESTATE is planned around the <strong>December 2026 coffee harvest</strong>, with estate Black Pepper also planned for release as the crop becomes ready.</p>
-<div class="grid">
-<div class="card"><h3>Chandragiri Arabica</h3><p>Estate-grown Chandragiri Arabica coffee. The first 2026 release will follow harvest, processing, quality checks and compliant packaging.</p><span class="tag">Coming December 2026</span></div>
-<div class="card"><h3>CxR Robusta</h3><p>Estate-grown CxR Robusta, harvested separately and documented as its own coffee lot.</p><span class="tag">Harvest from December 2026</span></div>
-<div class="card"><h3>Estate Black Pepper</h3><p>Black pepper grown as an intercrop across SAARTHA ESTATE, with the cultivation record and harvest journey documented from the field.</p><span class="tag">Coming Soon</span></div>
+<h2>SAARTHA ESTATE — Coffee Collection</h2>
+<p class="lead">A small collection of estate-grown coffee from the hills of Kodagu. Each blend is prepared to let the character of the coffee speak for itself, with clear ingredient composition and straightforward pricing.</p>
+<div class="grid coffee-products">
+<div class="card coffee-product">
+<img src="images/coffee/premium-arabica.webp" alt="SAARTHA ESTATE Premium Arabica coffee pouch" loading="lazy"/>
+<div class="coffee-product-copy">
+<p class="pill">100% Arabica · 0% chicory</p>
+<h3>Premium Arabica</h3>
+<p><em>The Pure Coffee Experience</em></p>
+<p>Made entirely from estate-grown Arabica, this coffee is for those who enjoy a naturally aromatic cup with a smooth, distinctive character. No chicory — just 100% coffee, grown with care in Kodagu.</p>
+<div class="coffee-prices"><span>500 g <strong>₹800</strong></span><span>1 kg <strong>₹1,500</strong></span></div>
 </div>
-<div class="note" style="margin-top:20px"><strong>How we will launch:</strong> For this first harvest, the website will remain primarily an information and research site. Product enquiries can be made by calling or messaging us on WhatsApp at <a href="tel:+919986024083">+91 99860 24083</a> or <a href="https://wa.me/919986024083" target="_blank" rel="noopener noreferrer">WhatsApp us</a>, while the formal food-business, labelling and online-sale requirements are put in place. No online checkout is being presented yet.</div>
-<div class="note" style="margin-top:16px"><strong>Our cultivation statement:</strong> SAARTHA ESTATE coffee and pepper are being cultivated without the use of synthetic pesticides, herbicides or fungicides. This describes our estate management practice; it is not a claim of laboratory-certified zero residue. Independent testing and compliant product labelling will be addressed before commercial packaged-food sales.</div>
+</div>
+<div class="card coffee-product">
+<img src="images/coffee/estate-signature.webp" alt="SAARTHA ESTATE Estate Signature coffee pouch" loading="lazy"/>
+<div class="coffee-product-copy">
+<p class="pill">50% Arabica · 50% Robusta · 0% chicory</p>
+<h3>Estate Signature</h3>
+<p><em>Classic Estate Blend</em></p>
+<p>A thoughtful meeting of two estate coffees: the aroma and character of Arabica with the fuller body of Robusta. A balanced everyday cup, blended without chicory.</p>
+<div class="coffee-prices"><span>500 g <strong>₹650</strong></span><span>1 kg <strong>₹1,200</strong></span></div>
+</div>
+</div>
+</div>
+<p class="subtle">Grown with care. Rooted in the land. Product enquiries: <a href="https://wa.me/919986024083" target="_blank" rel="noopener noreferrer">WhatsApp SAARTHA ESTATE</a>.</p>
+<div class="note"><strong>About this first release:</strong> These are the first two blends being introduced on the website. Additional blends will be added after their final composition, pack details and prices are confirmed.</div>
 </section>
 <section id="long-term-vision">
 <h2>Our Long-Term Vision — 2030 and Beyond</h2>
