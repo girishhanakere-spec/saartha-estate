@@ -35,7 +35,27 @@ main{max-width:1160px;margin:auto;padding:58px 24px 80px}.intro{max-width:790px;
 footer{background:#102d1e;color:#e9e6d8;padding:30px 24px;text-align:center;font:13px/1.8 Arial,sans-serif}footer a{color:#e8d2a4}
 @media(max-width:850px){nav{display:block;padding:12px 5%}nav>div{justify-content:flex-start;margin-top:8px}nav a{font-size:12px}}@media(max-width:760px){.product{grid-template-columns:1fr}.pack-image{height:390px;min-height:0;max-height:420px}.product-copy{padding:22px}main{padding:42px 16px 60px}}
 @media(max-width:560px){nav{position:relative}.logo{display:block;margin-bottom:6px}nav a{padding:5px 6px}}@media(max-width:390px){.prices{gap:5px}.price{padding:9px 4px}.price strong{font-size:15px}}
-.coffee-pack-wrap{position:relative;min-width:0}.coffee-pack-wrap>img{display:block;width:100%;height:100%;object-fit:contain}.pack-order{position:absolute;right:14px;bottom:14px;z-index:2;font:13px Arial,sans-serif}.pack-order summary{list-style:none;cursor:pointer;background:#d8bd86;color:#173b29;font-weight:700;padding:10px 17px;border-radius:24px;box-shadow:0 3px 12px #0004}.pack-order summary::-webkit-details-marker{display:none}.pack-order summary:before{content:'↗ ';}.pack-order-options{position:absolute;right:0;bottom:48px;min-width:185px;background:#fffdf8;color:#173b29;padding:12px;border-radius:8px;box-shadow:0 5px 22px #0005;display:grid;gap:8px}.pack-order-options span{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#68766b}.pack-order-options a{display:block;background:#173b29;color:#fff9ed;text-decoration:none;padding:10px 12px;border-radius:4px;font-size:13px}.pack-order[open] summary{background:#fffdf8}.coffee-pack-wrap .pack-image{height:100%;min-height:440px;max-height:520px}@media(max-width:760px){.coffee-pack-wrap .pack-image{height:390px;min-height:0;max-height:420px}}</style>
+.coffee-pack-wrap{position:relative;min-width:0}.coffee-pack-wrap>img{display:block;width:100%;height:100%;object-fit:contain}.pack-order{position:absolute;right:14px;bottom:14px;z-index:2;font:13px Arial,sans-serif}.pack-order summary{list-style:none;cursor:pointer;background:#d8bd86;color:#173b29;font-weight:700;padding:10px 17px;border-radius:24px;box-shadow:0 3px 12px #0004}.pack-order summary::-webkit-details-marker{display:none}.pack-order summary:before{content:'↗ ';}.pack-order-options{position:absolute;right:0;bottom:48px;min-width:185px;background:#fffdf8;color:#173b29;padding:12px;border-radius:8px;box-shadow:0 5px 22px #0005;display:grid;gap:8px}.pack-order-options span{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#68766b}.pack-order-options a{display:block;background:#173b29;color:#fff9ed;text-decoration:none;padding:10px 12px;border-radius:4px;font-size:13px}.pack-order[open] summary{background:#fffdf8}.coffee-pack-wrap .pack-image{height:100%;min-height:440px;max-height:520px}@media(max-width:760px){.coffee-pack-wrap .pack-image{height:390px;min-height:0;max-height:420px}}
+/* Match the estate-wide photographic journal background and visual language */
+html{background:#203b2b}
+body{position:relative;isolation:isolate;background:transparent;color:#f6f4e9}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(9,30,18,.40),rgba(9,30,18,.52)),url("coffee-pepper-hero.webp?v=20261024") center center/cover no-repeat;background-attachment:fixed}
+.hero{background:linear-gradient(110deg,rgba(8,31,18,.70),rgba(15,45,27,.30)),url("coffee-saplings-at-estate-entrance-oct-2026.webp?v=20261023") center 48%/cover no-repeat;color:#fffdf4;border-bottom:1px solid rgba(239,242,224,.22)}
+.hero p{color:#f0f0e5}
+main{position:relative}
+.intro h2{color:#f5f2df}.intro p{color:#e4eadf}
+.product{background:rgba(13,38,25,.70);border:1px solid rgba(239,242,224,.24);box-shadow:0 10px 30px rgba(0,0,0,.18);backdrop-filter:blur(4px)}
+.product-copy{color:#f4f4e9}
+.product h3{color:#f5edcf}.product-number{color:#e0c18a}
+.subtitle{color:#e5d5ad}.story{color:#e4eadf}
+.composition{background:rgba(230,240,226,.12);border-left-color:#e0c18a;color:#f4f4e9}
+.price-title{color:#e0e9dd}.price{background:rgba(230,240,226,.10);border-color:rgba(236,241,228,.25)}
+.price span{color:#e0e9dd}.price strong{color:#f0d29a}
+.closing{color:#f5edcf}
+footer{background:rgba(12,35,23,.90);color:#edf2e7;border-top:1px solid rgba(239,242,224,.22)}
+footer a{color:#f0d29a}
+@media(max-width:560px){body:before{background-attachment:scroll}}
+</style>
 </head>
 <body>
 <nav class="nav" aria-label="Main navigation">
